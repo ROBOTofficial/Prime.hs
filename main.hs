@@ -1,10 +1,5 @@
 import System.IO ()
 
-solve :: Int -> IO ()
-solve n
-    | isPrime n = do
-        appendFile "prime.txt" (show n ++ "\n")
-
 for :: Int -> Int -> IO ()
 for n max
     | n > max = putStrLn "END"
